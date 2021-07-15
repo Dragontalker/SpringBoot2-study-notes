@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 /**
- * 主程序类
+ * 主程序类; 主配置类
  * @SpringBootApplication: 这是一个SpringBoot应用
  */
 @SpringBootApplication
