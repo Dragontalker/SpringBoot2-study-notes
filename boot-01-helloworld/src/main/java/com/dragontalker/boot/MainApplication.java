@@ -1,5 +1,6 @@
 package com.dragontalker.boot;
 
+import ch.qos.logback.core.db.DBHelper;
 import com.dragontalker.boot.bean.Pet;
 import com.dragontalker.boot.bean.User;
 import com.dragontalker.boot.config.MyConfig;
@@ -44,5 +45,15 @@ public class MainApplication {
         Pet tom = run.getBean("tom", Pet.class);
 
         System.out.println("用户的宠物: " + (user011.getPet() == tom));
+
+        // 5. 获取组件
+        String[] beanNamesForType = run.getBeanNamesForType(User.class);
+        System.out.println("========");
+        for (String s : beanNamesForType) {
+            System.out.println(s);
+        }
+
+        DBHelper bean1 = run.getBean(DBHelper.class);
+        System.out.println(bean1);
     }
 }
