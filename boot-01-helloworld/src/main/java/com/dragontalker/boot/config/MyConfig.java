@@ -1,9 +1,11 @@
 package com.dragontalker.boot.config;
 
+import ch.qos.logback.core.db.DBHelper;
 import com.dragontalker.boot.bean.Pet;
 import com.dragontalker.boot.bean.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 /**
  * 1. 配置类里面使用@Bean标注在方法上给容器注册组件, 默认也是单实例的
@@ -13,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
  *      Lite, 轻量级模式 proxyBeanMethods = false, 跳过bean检查, 快速启动
  *        组件依赖
  */
+@Import({User.class, DBHelper.class})
 @Configuration(proxyBeanMethods = false) // 告诉SpringBoot这是一个配置类
 public class MyConfig {
 
