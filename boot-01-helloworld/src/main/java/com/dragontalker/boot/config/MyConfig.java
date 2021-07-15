@@ -18,6 +18,8 @@ import org.springframework.context.annotation.ImportResource;
  * 4. @Import({User.class, DBHelper.class})
  *      给容器中自动创建出这两个类型的组件, 默认组件的名字就是全类名
  *
+ * 5. @ImportResource("classpath:beans.xml") 允许导入传统的xml文件配置bean
+ *
  */
 @Import({User.class})
 @Configuration(proxyBeanMethods = false) // 告诉SpringBoot这是一个配置类
