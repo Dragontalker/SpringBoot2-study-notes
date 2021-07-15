@@ -34,7 +34,7 @@ public class MyConfig {
         return zhangsan;
     }
 
-    @Bean("tom2")
+    @Bean("tom22")
     public Pet tomcatPet() {
         return new Pet("tomcat");
     }
