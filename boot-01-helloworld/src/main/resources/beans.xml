@@ -7,4 +7,8 @@
         <property name="name" value="user01" />
         <property name="age" value="18" />
     </bean>
+
+    <bean id="cat" class="com.dragontalker.boot.bean.Pet">
+        <property name="name" value="tomcat" />
+    </bean>
 </beans>
