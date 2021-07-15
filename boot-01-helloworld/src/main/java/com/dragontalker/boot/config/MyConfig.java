@@ -22,7 +22,9 @@ public class MyConfig {
      */
     @Bean // 给容器中添加组件, 以方法名作为组件的id, 返回类型就是组件类型, 返回的值, 就是容器中保存的实例
     public User user01() {
-        return new User("zhangsan", 18);
+        User zhangsan = new User("zhangsan", 18);
+        zhangsan.setPet(tomcatPet());
+        return zhangsan;
     }
 
     @Bean("tom")
