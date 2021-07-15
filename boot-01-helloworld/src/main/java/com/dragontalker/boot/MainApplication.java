@@ -15,6 +15,10 @@ public class MainApplication {
         // 1. 返回我们IOC容器
         ConfigurableApplicationContext run = SpringApplication.run(MainApplication.class);
 
-
+        // 2. 查看容器里面的组件
+        String[] names = run .getBeanDefinitionNames();
+        for (String name : names) {
+            System.out.println(name);
+        }
     }
 }
