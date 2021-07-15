@@ -14,6 +14,9 @@ import org.springframework.context.annotation.Import;
  *      Full, 全模式 proxyBeanMethods = true
  *      Lite, 轻量级模式 proxyBeanMethods = false, 跳过bean检查, 快速启动
  *        组件依赖
+ * 4. @Import({User.class, DBHelper.class})
+ *      给容器中自动创建出这两个类型的组件
+ *
  */
 @Import({User.class, DBHelper.class})
 @Configuration(proxyBeanMethods = false) // 告诉SpringBoot这是一个配置类
