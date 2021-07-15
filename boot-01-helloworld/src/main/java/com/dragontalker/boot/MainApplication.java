@@ -1,6 +1,7 @@
 package com.dragontalker.boot;
 
 import com.dragontalker.boot.bean.Pet;
+import com.dragontalker.boot.bean.User;
 import com.dragontalker.boot.config.MyConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,5 +31,9 @@ public class MainApplication {
 
         MyConfig bean = run.getBean(MyConfig.class);
         System.out.println(bean);
+
+        User user01 = run.getBean(User.class);
+        User user02 = run.getBean(User.class);
+        System.out.println(user01 == user02);
     }
 }
