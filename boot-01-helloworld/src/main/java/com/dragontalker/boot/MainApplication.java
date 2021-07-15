@@ -36,8 +36,8 @@ public class MainApplication {
         // 如果@Configuration(proxyBeanMethods = true)代理对象调用方法.
         // SpringBoot总会检查这个组件是否在容器中有
         // 保持组件单实例
-        User user01 = run.getBean(User.class);
-        User user02 = run.getBean(User.class);
+        User user01 = bean.user01();
+        User user02 = bean.user01();
         System.out.println(user01 == user02);
     }
 }

@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * 1. 配置类里面使用@Bean标注在方法上给容器注册组件, 默认也是单实例的
  * 2. 配置类本身也是组件
  * 3. proxyBeanMethods: 代理bean的方法
+ *      full, lite
  */
 @Configuration(proxyBeanMethods = true) // 告诉SpringBoot这是一个配置类
 public class MyConfig {
