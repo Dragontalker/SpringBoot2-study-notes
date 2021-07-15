@@ -1,8 +1,10 @@
 package com.dragontalker.boot.config;
 
+import com.dragontalker.boot.bean.Car;
 import com.dragontalker.boot.bean.Pet;
 import com.dragontalker.boot.bean.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -26,6 +28,8 @@ import org.springframework.context.annotation.ImportResource;
 //@ConditionalOnBean(name = "tom")
 @ConditionalOnMissingBean(name = "tom")
 @ImportResource("classpath:beans.xml")
+@EnableConfigurationProperties(Car.class)
+// 1. 开启Car属性配置功能
 public class MyConfig {
 
     /**
