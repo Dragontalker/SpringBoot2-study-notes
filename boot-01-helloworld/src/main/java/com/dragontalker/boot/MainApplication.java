@@ -20,5 +20,7 @@ public class MainApplication {
         for (String name : names) {
             System.out.println(name);
         }
+
+        // 3. 从容器中获取组件
     }
 }

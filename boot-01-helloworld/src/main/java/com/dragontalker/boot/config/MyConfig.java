@@ -13,7 +13,7 @@ public class MyConfig {
         return new User("zhangsan", 18);
     }
 
-    @Bean
+    @Bean("tom")
     public Pet tomcatPet() {
         return new Pet("tomcat");
     }
