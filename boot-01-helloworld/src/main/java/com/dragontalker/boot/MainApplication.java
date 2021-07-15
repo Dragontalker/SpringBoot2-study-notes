@@ -55,5 +55,11 @@ public class MainApplication {
 
         DBHelper bean1 = run.getBean(DBHelper.class);
         System.out.println(bean1);
+
+        boolean tom = run.containsBean("tom");
+        System.out.println("容器中Tom组件: " + tom);
+
+        boolean user01 = run.containsBean("user01");
+        System.out.println("容器中user01组件: " + user01);
     }
 }
