@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  *      Lite, proxyBeanMethods = false
  *        组件依赖
  */
-@Configuration(proxyBeanMethods = true) // 告诉SpringBoot这是一个配置类
+@Configuration(proxyBeanMethods = false) // 告诉SpringBoot这是一个配置类
 public class MyConfig {
 
     /**
