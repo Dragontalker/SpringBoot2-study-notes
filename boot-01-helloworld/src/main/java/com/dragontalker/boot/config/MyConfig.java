@@ -29,7 +29,8 @@ import org.springframework.context.annotation.ImportResource;
 @ConditionalOnMissingBean(name = "tom")
 @ImportResource("classpath:beans.xml")
 @EnableConfigurationProperties(Car.class)
-// 1. 开启Car属性配置功能
+// 1. 开启Car配置绑定功能
+// 2. 把Car这个组件自动注册到容器中
 public class MyConfig {
 
     /**
