@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93f1c22e-0645-479d-8e14-ec33eac8c124" name="Default Changelist" comment="Added notes.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dragontalker/boot/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dragontalker/boot/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,20 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626374992394</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Added notes.">
-      <created>1626377857873</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1626377857873</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added notes.">
-      <created>1626379849569</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1626379849569</updated>
     </task>
     <task id="LOCAL-00003" summary="Added notes.">
       <created>1626380267258</created>
@@ -380,7 +366,56 @@
       <option name="project" value="LOCAL" />
       <updated>1626392126190</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added notes.">
+      <created>1626392246822</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1626392246822</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Added notes.">
+      <created>1626392273256</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1626392273256</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Added notes.">
+      <created>1626392310717</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1626392310717</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Added notes.">
+      <created>1626392322211</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1626392322211</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Added notes.">
+      <created>1626392408821</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1626392408821</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Added notes.">
+      <created>1626392448732</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1626392448733</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Added notes.">
+      <created>1626392510384</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1626392510384</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
