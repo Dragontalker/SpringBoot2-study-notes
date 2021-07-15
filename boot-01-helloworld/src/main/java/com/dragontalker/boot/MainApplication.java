@@ -1,9 +1,5 @@
 package com.dragontalker.boot;
 
-import ch.qos.logback.core.db.DBHelper;
-import com.dragontalker.boot.bean.Pet;
-import com.dragontalker.boot.bean.User;
-import com.dragontalker.boot.config.MyConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
