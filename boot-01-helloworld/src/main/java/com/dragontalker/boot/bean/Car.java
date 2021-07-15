@@ -1,5 +1,8 @@
 package com.dragontalker.boot.bean;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties
 public class Car {
 
     private String brand;
