@@ -3,6 +3,7 @@ package com.dragontalker.boot.config;
 import ch.qos.logback.core.db.DBHelper;
 import com.dragontalker.boot.bean.Pet;
 import com.dragontalker.boot.bean.User;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -25,6 +26,7 @@ public class MyConfig {
     /**
      * 外部无论对配置类中的这个组件注册方法调用多少次获取的都是之前注册容器的单实例对象
      */
+    @ConditionalOnBean(name = "tom")
     @Bean // 给容器中添加组件, 以方法名作为组件的id, 返回类型就是组件类型, 返回的值, 就是容器中保存的实例
     public User user01() {
         User zhangsan = new User("zhangsan", 18);
