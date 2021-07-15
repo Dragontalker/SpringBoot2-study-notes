@@ -2,6 +2,10 @@ package com.dragontalker.boot;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 主程序类
+ * @SpringBootApplication: 这是一个SpringBoot应用
+ */
 @SpringBootApplication
 public class MainApplication {
 }
