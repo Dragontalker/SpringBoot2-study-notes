@@ -1,5 +1,6 @@
 package com.dragontalker.boot;
 
+import com.dragontalker.boot.bean.Pet;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -22,5 +23,8 @@ public class MainApplication {
         }
 
         // 3. 从容器中获取组件
+        Pet tom01 = run.getBean("tom", Pet.class);
+        Pet tom02 = run.getBean("tom", Pet.class);
+        System.out.println(tom01 == tom02);
     }
 }
