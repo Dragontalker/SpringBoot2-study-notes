@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * 2. 配置类本身也是组件
  * 3. proxyBeanMethods: 代理bean的方法
  *      Full, 全模式 proxyBeanMethods = true
- *      Lite, 轻量级模式 proxyBeanMethods = false
+ *      Lite, 轻量级模式 proxyBeanMethods = false, 跳过bean检查, 快速启动
  *        组件依赖
  */
 @Configuration(proxyBeanMethods = false) // 告诉SpringBoot这是一个配置类
