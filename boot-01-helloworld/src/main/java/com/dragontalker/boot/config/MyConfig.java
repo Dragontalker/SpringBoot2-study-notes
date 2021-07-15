@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  * 1. 配置类里面使用@Bean标注在方法上给容器注册组件, 默认也是单实例的
@@ -22,6 +23,7 @@ import org.springframework.context.annotation.Import;
 @Configuration(proxyBeanMethods = false) // 告诉SpringBoot这是一个配置类
 //@ConditionalOnBean(name = "tom")
 @ConditionalOnMissingBean(name = "tom")
+@ImportResource("classpath:beans.xml")
 public class MyConfig {
 
     /**
