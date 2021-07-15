@@ -1,6 +1,7 @@
 package com.dragontalker.boot;
 
 import com.dragontalker.boot.bean.Pet;
+import com.dragontalker.boot.config.MyConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -26,5 +27,8 @@ public class MainApplication {
         Pet tom01 = run.getBean("tom", Pet.class);
         Pet tom02 = run.getBean("tom", Pet.class);
         System.out.println(tom01 == tom02);
+
+        MyConfig bean = run.getBean(MyConfig.class);
+        System.out.println(bean);
     }
 }
