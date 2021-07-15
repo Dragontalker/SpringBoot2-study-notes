@@ -1,6 +1,5 @@
 package com.dragontalker.boot.config;
 
-import ch.qos.logback.core.db.DBHelper;
 import com.dragontalker.boot.bean.Pet;
 import com.dragontalker.boot.bean.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
@@ -19,7 +18,7 @@ import org.springframework.context.annotation.Import;
  *      给容器中自动创建出这两个类型的组件, 默认组件的名字就是全类名
  *
  */
-@Import({User.class, DBHelper.class})
+@Import({User.class})
 @Configuration(proxyBeanMethods = false) // 告诉SpringBoot这是一个配置类
 @ConditionalOnBean(name = "tom")
 public class MyConfig {

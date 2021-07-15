@@ -47,14 +47,11 @@ public class MainApplication {
         //System.out.println("用户的宠物: " + (user011.getPet() == tom));
 
         // 5. 获取组件
-        String[] beanNamesForType = run.getBeanNamesForType(User.class);
-        System.out.println("========");
-        for (String s : beanNamesForType) {
-            System.out.println(s);
-        }
-
-        DBHelper bean1 = run.getBean(DBHelper.class);
-        System.out.println(bean1);
+        //String[] beanNamesForType = run.getBeanNamesForType(User.class);
+        //System.out.println("========");
+        //for (String s : beanNamesForType) {
+            //System.out.println(s);
+       //}
 
         boolean tom = run.containsBean("tom");
         System.out.println("容器中Tom组件: " + tom);
