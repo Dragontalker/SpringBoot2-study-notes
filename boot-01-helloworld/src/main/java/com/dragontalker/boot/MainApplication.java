@@ -26,25 +26,25 @@ public class MainApplication {
         }
 
         // 3. 从容器中获取组件
-        Pet tom01 = run.getBean("tom", Pet.class);
-        Pet tom02 = run.getBean("tom", Pet.class);
-        System.out.println(tom01 == tom02);
+        //Pet tom01 = run.getBean("tom", Pet.class);
+        //Pet tom02 = run.getBean("tom", Pet.class);
+        //System.out.println(tom01 == tom02);
 
         // 4. com.dragontalker.boot.config.MyConfig$$EnhancerBySpringCGLIB$$aab697e@27aae97b
-        MyConfig bean = run.getBean(MyConfig.class);
-        System.out.println(bean);
+        //MyConfig bean = run.getBean(MyConfig.class);
+        //System.out.println(bean);
 
         // 如果@Configuration(proxyBeanMethods = true)代理对象调用方法.
         // SpringBoot总会检查这个组件是否在容器中有
         // 保持组件单实例
-        User user01 = bean.user01();
-        User user02 = bean.user01();
-        System.out.println(user01 == user02);
+        //User user01 = bean.user01();
+        //User user02 = bean.user01();
+        //System.out.println(user01 == user02);
 
-        User user011 = run.getBean("user01", User.class);
-        Pet tom = run.getBean("tom", Pet.class);
+        //User user011 = run.getBean("user01", User.class);
+        //Pet tom = run.getBean("tom", Pet.class);
 
-        System.out.println("用户的宠物: " + (user011.getPet() == tom));
+        //System.out.println("用户的宠物: " + (user011.getPet() == tom));
 
         // 5. 获取组件
         String[] beanNamesForType = run.getBeanNamesForType(User.class);
