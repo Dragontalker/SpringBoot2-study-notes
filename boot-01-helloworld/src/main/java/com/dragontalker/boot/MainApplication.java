@@ -1,14 +1,19 @@
 package com.dragontalker.boot;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 主程序类; 主配置类
  * @SpringBootApplication: 这是一个SpringBoot应用
  */
-@SpringBootApplication
+//@SpringBootApplication
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@ComponentScan("com.dragontalker.boot")
 public class MainApplication {
 
     public static void main(String[] args) {
