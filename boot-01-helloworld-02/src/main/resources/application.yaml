@@ -1,0 +1,27 @@
+person:
+  userName: ZhangSan
+  boss: true
+  birth: 2019/12/9
+  age: 18
+  interests:
+    - basketball
+    - football
+    - 18
+  animal: [tomcat, jerrydog]
+  score: {english: 80, math: 90}
+  salary:
+    - 9999.98
+    - 9999.99
+  pet:
+    name: jerrydog
+    weight: 99.99
+  allPets:
+    sick:
+      - {name: jerrydog, weight: 99.99}
+      - name: tomcat
+        weight: 88.88
+      - name: jackbug
+        weight: 77.77
+    health:
+      - {name: HuaHua, weight: 199.99}
+      - {name: MingMing, weight: 199.98}
