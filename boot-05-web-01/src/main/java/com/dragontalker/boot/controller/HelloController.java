@@ -16,4 +16,9 @@ public class HelloController {
     public String getUser() {
        return "GET-张三";
     }
+
+    @RequestMapping(value = "/user", method = RequestMethod.POST)
+    public String postUser() {
+        return "POST-张三";
+    }
 }
