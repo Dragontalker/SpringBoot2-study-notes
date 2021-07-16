@@ -20,6 +20,6 @@ public class Person {
     private String[] interests;
     private List<String> animal;
     private Map<String, Object> score;
-    private Set<Double> salarys;
+    private Set<Double> salary;
     private Map<String, List<Pet>> allPets;
 }
