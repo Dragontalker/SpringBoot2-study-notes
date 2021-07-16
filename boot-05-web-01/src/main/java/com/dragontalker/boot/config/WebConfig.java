@@ -10,6 +10,7 @@ public class WebConfig {
     @Bean
     public HiddenHttpMethodFilter hiddenHttpMethodFilter() {
         HiddenHttpMethodFilter methodFilter = new HiddenHttpMethodFilter();
+        methodFilter.setMethodParam("_m");
         return methodFilter;
     }
 }
