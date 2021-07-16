@@ -2,6 +2,8 @@ package com.dragontalker.boot01helloworld02.bean;
 
 import lombok.Data;
 import lombok.ToString;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.List;
@@ -10,6 +12,8 @@ import java.util.Set;
 
 @Data
 @ToString
+@Component
+@ConfigurationProperties(prefix = "person")
 public class Person {
 
     private String userName;
