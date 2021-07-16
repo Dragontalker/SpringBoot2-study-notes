@@ -29,4 +29,6 @@ public class HelloController {
     public String deleteUser() {
         return "DELETE-张三";
     }
+
+    // 扩展点: 如果使用自定义方法名
 }
