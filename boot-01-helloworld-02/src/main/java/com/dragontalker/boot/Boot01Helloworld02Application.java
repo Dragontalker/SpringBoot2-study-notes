@@ -1,4 +1,4 @@
-package com.dragontalker.boot01helloworld02;
+package com.dragontalker.boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

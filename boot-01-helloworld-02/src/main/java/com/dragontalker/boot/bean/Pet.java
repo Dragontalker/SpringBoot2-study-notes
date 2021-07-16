@@ -1,4 +1,4 @@
-package com.dragontalker.boot01helloworld02.bean;
+package com.dragontalker.boot.bean;
 
 import lombok.Data;
 import lombok.ToString;
