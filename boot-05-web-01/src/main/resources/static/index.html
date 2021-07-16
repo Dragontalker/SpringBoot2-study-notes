@@ -10,12 +10,19 @@
         <h1>Welcome!</h1>
 
         测试REST风格:
+        <hr>
+
         <form action="/user" method="get">
             <input value="REST-GET 提交" type="submit" />
         </form>
         <br>
         <form action="/user" method="post">
             <input value="REST-POST 提交" type="submit" />
+        </form>
+        <br>
+        <form action="/user" method="put">
+            <input name="_method" type="hidden" value="PUT" />
+            <input value="REST-PUT 提交" type="submit" />
         </form>
     </body>
 
