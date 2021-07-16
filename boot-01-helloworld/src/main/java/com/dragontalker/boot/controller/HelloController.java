@@ -19,7 +19,7 @@ public class HelloController {
         return car;
     }
 
-    @RequestMapping("/hello")
+    @RequestMapping("/hello2")
     public String handle01(@RequestParam("name") String name) {
 
         log.info("请求进来啦...");
