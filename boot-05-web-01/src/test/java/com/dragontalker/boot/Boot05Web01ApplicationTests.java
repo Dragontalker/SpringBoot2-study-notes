@@ -1,4 +1,4 @@
-package com.dragontalker.boot05web01;
+package com.dragontalker.boot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
