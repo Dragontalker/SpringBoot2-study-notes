@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @RequestMapping("/bug.jpg")
+    @RequestMapping("/bug")
     public String hello() {
         return "aaaa";
     }
