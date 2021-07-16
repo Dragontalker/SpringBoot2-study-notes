@@ -21,4 +21,9 @@ public class HelloController {
     public String postUser() {
         return "POST-张三";
     }
+
+    @RequestMapping(value = "/user", method = RequestMethod.PUT)
+    public String putUser() {
+        return "PUT-张三";
+    }
 }
