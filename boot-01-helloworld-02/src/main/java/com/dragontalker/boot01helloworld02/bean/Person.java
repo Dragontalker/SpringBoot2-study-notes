@@ -1,6 +1,7 @@
 package com.dragontalker.boot01helloworld02.bean;
 
 import lombok.Data;
+import lombok.ToString;
 
 import java.util.Date;
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.Map;
 import java.util.Set;
 
 @Data
+@ToString
 public class Person {
 
     private String userName;
