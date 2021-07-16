@@ -40,7 +40,6 @@ public class MyConfig {
     public User user01() {
         User zhangsan = new User("zhangsan", 18);
         // user组件依赖了pet组件
-        zhangsan.setPet(tomcatPet());
         return zhangsan;
     }
 
